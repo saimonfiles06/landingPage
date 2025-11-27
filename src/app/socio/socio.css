@@ -1,0 +1,76 @@
+/* ===== HAZTE SOCIO ===== */
+.hazte-socio {
+  background-color: #CB3524;
+  /* rojo Atlético */
+  color: #FFFFFF;
+  padding: 60px 20px;
+}
+
+.hazte-socio .socio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hazte-socio .socio-text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.hazte-socio .socio-text p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.hazte-socio .socio-text button {
+  background-color: #272E61;
+  /* azul Atlético */
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.hazte-socio .socio-text button:hover {
+  background-color: #1a2247;
+  /* azul más oscuro al hover */
+}
+
+.hazte-socio .socio-img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #272E61;
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 768px) {
+  .hazte-socio .socio-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hazte-socio .socio-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .hazte-socio .socio-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

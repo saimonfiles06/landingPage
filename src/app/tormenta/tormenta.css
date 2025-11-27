@@ -1,0 +1,93 @@
+/* ===== TORMENTA / SEGUNDA EQUIPACIÓN ===== */
+.tormenta {
+  padding: 50px 20px;
+  background-color: #272E61; /* azul de la camiseta */
+}
+
+.tormenta h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF; /* título blanco sobre azul */
+}
+
+.tormenta h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF; /* subtítulo blanco sobre azul */
+}
+
+/* Grid responsivo */
+.tormenta .news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Cards con bordes rojos */
+.tormenta .news-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #CB3524; /* borde rojo Atlético */
+  max-width: 315px;
+}
+
+.tormenta .news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  border-color: #FFFFFF; /* borde blanco al hover sobre azul */
+}
+
+/* Imágenes de las cards (general) */
+.tormenta .news-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;   /* mantiene proporción completa */
+  background-color: #FFFFFF; /* fondo blanco para camisetas claras */
+  padding: 10px;
+}
+
+/* Primera card: mantiene tamaño grande pero sin blanco ni padding */
+.tormenta .news-card:first-child img {
+  object-fit: contain;    /* mantiene proporción */
+  background-color: transparent; /* sin fondo blanco */
+  padding: 0;             /* sin padding alrededor */
+  height: 300px;          /* altura grande */
+  width: 100%;
+}
+
+/* Contenido de las cards */
+.tormenta .news-content {
+  padding: 15px 10px;
+}
+
+.tormenta .news-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #CB3524; /* título rojo sobre fondo blanco de la card */
+}
+
+.tormenta .news-content h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0 0;
+  color: #272E61; /* precio en azul oscuro */
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 1024px) {
+  .tormenta .news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

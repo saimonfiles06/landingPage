@@ -1,0 +1,145 @@
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #282A6F; /* azul más oscuro que la sección tormenta */
+  color: #FFFFFF;
+  padding: 60px 20px 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.footer p, .footer span, .footer h4 {
+  margin: 0;
+}
+
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.footer a:hover {
+  color: #E31B23; /* rojo Atlético */
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Redes sociales columna 1 */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-social a i {
+  font-size: 18px;
+}
+
+/* App columna 4 */
+.footer-app {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* separación entre QR y texto */
+  margin-top: 10px;
+}
+
+.footer-app img {
+  width: 80px;
+  height: auto;
+}
+
+.footer-app .app-text {
+  display: flex;
+  flex-direction: column; /* dos líneas: DESCARGA / LA APP */
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-bottom span {
+  font-weight: 400;
+}
+/* Hover en iconos de redes sociales */
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFFFFF; /* fondo blanco */
+  color: #1A1A1A; /* color de icono por defecto */
+  transition: all 0.3s ease;
+}
+
+.footer-social  a:hover {
+  background-color: #E31B23; /* rojo Atlético */
+  color: #FFFFFF; /* icono en blanco */
+  transform: scale(1.1); /* ligero zoom */
+}
+.footer-column h4 {
+  font-family: 'Montserrat', sans-serif; /* tipografía oficial */
+  font-weight: 900; /* más negrita para destacar */
+  font-size: 86px; /* tamaño mayor que el resto */
+  letter-spacing: 2px; /* espaciado entre letras */
+  text-transform: uppercase; /* mayúsculas */
+  color: #FFFFFF; /* blanco */
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-app {
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

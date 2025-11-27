@@ -1,0 +1,65 @@
+.actualidad {
+  padding: 60px 20px;
+  background-color: #F5F5F5;
+  text-align: center; /* centra los elementos cuando hay varias filas */
+}
+
+.actualidad h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1A1A1A;
+}
+
+.actualidad .news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra las cards */
+  gap: 20px;
+}
+
+.actualidad .news-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-flex; /* ancho según el contenido */
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  max-width: 250px;
+}
+
+.actualidad .news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.actualidad .news-card img {
+  display: block;
+  width: auto;       /* ancho real de la imagen */
+  height: auto;      /* altura proporcional */
+  max-width: 250px;  /* opcional: limita el tamaño máximo */
+  object-fit: contain;
+  margin: 0 auto;    /* centra horizontalmente la imagen dentro de la card */
+  background-color: #f0f0f0; /* opcional */
+}
+
+.actualidad .news-content {
+  padding: 15px;
+}
+
+.actualidad .news-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+/* Ajuste para grilla en pantalla grande */
+@media (min-width: 1024px) {
+  .news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

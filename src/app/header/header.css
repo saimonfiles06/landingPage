@@ -84,10 +84,14 @@
   }
 
   .header__nav p {
-    display: none;
-    /* oculta solo el texto */
+    display: flex;      /* mantiene iconos */
+    align-items: center;
+    gap: 0;             /* quitar espacio con texto */
   }
 
+  .header__nav p span {
+    display: none;      /* oculta el texto */
+  }
   .header__nav i {
     display: inline-block;
     /* mantiene los iconos visibles */
@@ -113,11 +117,15 @@
     text-align: center;
   }
 
-  .header__nav p {
-    display: none;
-    /* oculta solo el texto */
-  }
 
+  .header__nav p {
+    display: flex;      /* mantiene iconos */
+    align-items: center;
+    gap: 0;             /* quitar espacio con texto */
+  }
+  .header__nav p span {
+    display: none;      /* oculta el texto */
+  }
   .header__nav i {
     display: inline-block;
     /* iconos visibles */

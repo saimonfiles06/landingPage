@@ -29,6 +29,19 @@
   line-height: 1.5;
 }
 
+.hazte-socio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hazte-socio button,
+.hazte-socio a {
+  margin: 0 auto;
+  display: block;
+}
+
 .hazte-socio .socio-text button {
   background-color: #272E61;
   /* azul Atlético */

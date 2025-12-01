@@ -24,6 +24,7 @@
   font-size: 18px;
   font-weight: bold;
 }
+
 .header__nav p {
   display: flex;
   align-items: center;
@@ -35,6 +36,15 @@
 .header__nav p i {
   font-size: 18px;
 }
+
+.header__nav p {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.header__nav p:hover {
+  color: #272E61;
+}
+
 
 /* ======== NAV DESKTOP ======== */
 
@@ -59,3 +69,65 @@
   padding-bottom: 4px;
 }
 
+
+@media(min-width:769px) and (max-width: 1024px) {
+  header {
+    text-align: center;
+  }
+
+  header .logo,
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__nav p {
+    display: none;
+    /* oculta solo el texto */
+  }
+
+  .header__nav i {
+    display: inline-block;
+    /* mantiene los iconos visibles */
+  }
+
+  .header__nav {
+    flex-direction: row;
+    /* iconos en fila */
+    justify-content: center;
+    /* centrados */
+    gap: 15px;
+    /* separación entre iconos */
+  }
+}
+
+@media (max-width: 768px) {
+
+  header .logo,
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__nav p {
+    display: none;
+    /* oculta solo el texto */
+  }
+
+  .header__nav i {
+    display: inline-block;
+    /* iconos visibles */
+  }
+
+  .header__nav {
+    flex-direction: row;
+    /* iconos en fila */
+    justify-content: center;
+    /* centrados */
+    gap: 15px;
+  }
+}

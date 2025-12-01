@@ -22,9 +22,10 @@
 
 /* Grid responsivo */
 .tormenta .news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra las cards */
+  gap: 20px;
 }
 
 /* Cards con bordes rojos */

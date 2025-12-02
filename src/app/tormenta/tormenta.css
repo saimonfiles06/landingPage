@@ -41,6 +41,7 @@
   text-align: center;
   border: 2px solid #CB3524; /* borde rojo Atlético */
   max-width: 315px;
+  cursor: pointer;
 }
 
 .tormenta .news-card:hover {

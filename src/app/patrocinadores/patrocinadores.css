@@ -27,6 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  cursor: pointer;
 }
 
 /* Fila principales: logos alineados extremos */
@@ -44,6 +45,7 @@
   height: auto;
   object-fit: contain;
   transition: transform 0.25s ease, opacity 0.25s ease;
+  
 }
 
 .patro-grid.principales .patro-item img:hover {

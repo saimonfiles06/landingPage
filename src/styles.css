@@ -4,14 +4,12 @@
 /* ===== GOOGLE FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
 
-/* ===== GLOBAL ===== */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   background-color: #00315C;
   /* azul más oscuro que sección tormenta */
@@ -90,7 +88,6 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  /* separación entre QR y texto */
   margin-top: 10px;
 }
 
@@ -102,13 +99,12 @@ body {
 .footer-app .app-text {
   display: flex;
   flex-direction: column;
-  /* dos líneas: DESCARGA / LA APP */
   font-size: 14px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
-/* Footer bottom */
+
 .footer-bottom {
   border-top: 1px solid #1A1A1A;
   padding-top: 20px;
@@ -123,14 +119,10 @@ body {
   font-weight: 400;
 }
 
-/* =========================
-RESPONSIVE FOOTER
-========================= */
+
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
-  /* Arregla el zoom general */
   html, body {
     zoom: 1 !important;
     transform: none !important;
@@ -179,13 +171,10 @@ RESPONSIVE FOOTER
   }
 }
 
-/* ============================================================
-   =======================    MÓVIL   ==========================
-   ============================================================ */
+
 
 @media (max-width: 768px) {
 
-  /* ========== HEADER ========== */
   header {
     padding: 10px 15px;
     flex-wrap: wrap;
@@ -206,7 +195,6 @@ RESPONSIVE FOOTER
     font-size: 14px;
   }
 
-  /* ========== FOOTER ========== */
   .footer {
     padding: 40px 10px 20px;
   }

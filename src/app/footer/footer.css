@@ -1,6 +1,5 @@
-/* ===== FOOTER ===== */
 .footer {
-  background-color: #282A6F; /* azul más oscuro que la sección tormenta */
+  background-color: #282A6F;
   color: #FFFFFF;
   padding: 60px 20px 30px;
   font-family: 'Montserrat', sans-serif;
@@ -102,23 +101,23 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #FFFFFF; /* fondo blanco */
-  color: #1A1A1A; /* color de icono por defecto */
+  background-color: #FFFFFF; 
+  color: #1A1A1A; 
   transition: all 0.3s ease;
 }
 
 .footer-social  a:hover {
-  background-color: #E31B23; /* rojo Atlético */
-  color: #FFFFFF; /* icono en blanco */
-  transform: scale(1.1); /* ligero zoom */
+  background-color: #E31B23; 
+  color: #FFFFFF; 
+  transform: scale(1.1); 
 }
 .footer-column h4 {
-  font-family: 'Montserrat', sans-serif; /* tipografía oficial */
-  font-weight: 900; /* más negrita para destacar */
-  font-size: 86px; /* tamaño mayor que el resto */
-  letter-spacing: 2px; /* espaciado entre letras */
-  text-transform: uppercase; /* mayúsculas */
-  color: #FFFFFF; /* blanco */
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 900; 
+  font-size: 86px;
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+  color: #FFFFFF; 
   margin-bottom: 15px;
 }
 

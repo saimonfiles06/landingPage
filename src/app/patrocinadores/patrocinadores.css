@@ -1,6 +1,6 @@
-/* ===== PATROCINADORES ===== */
+
 .patrocinadores {
-  background-color: #272E61; /* azul de la sección Tormenta */
+  background-color: #272E61;
   padding: 60px 20px;
   text-align: center;
 }
@@ -12,7 +12,7 @@
   color: #FFFFFF;
 }
 
-/* Línea separadora */
+
 .patrocinadores .separador {
   border: none;
   border-top: 2px solid #FFFFFF;
@@ -22,7 +22,6 @@
   margin-right: auto;
 }
 
-/* Grid general */
 .patro-grid {
   display: flex;
   flex-wrap: wrap;
@@ -30,16 +29,16 @@
   cursor: pointer;
 }
 
-/* Fila principales: logos alineados extremos */
+
 .patro-grid.principales {
-  justify-content: space-between; /* izq y der */
+  justify-content: space-between; 
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   gap: 0;
 }
 
-/* Logos principales */
+
 .patro-grid.principales .patro-item img {
   max-width: 200px;
   height: auto;
@@ -53,7 +52,7 @@
   opacity: 0.9;
 }
 
-/* Logos secundarios centrados */
+
 .patro-grid.secundarios {
   justify-content: center;
   gap: 40px;
@@ -72,7 +71,6 @@
   opacity: 0.9;
 }
 
-/* Ajuste responsive */
 @media (max-width: 768px) {
   .patro-grid.principales {
     flex-direction: column;

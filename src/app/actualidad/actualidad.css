@@ -65,7 +65,6 @@
   margin: 0;
 }
 
-/* Ajuste para grilla en pantalla grande */
 @media (min-width: 1024px) {
   .news-grid {
     grid-template-columns: repeat(4, 1fr);

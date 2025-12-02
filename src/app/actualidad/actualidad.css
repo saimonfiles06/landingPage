@@ -1,21 +1,22 @@
 .actualidad {
   padding: 60px 20px;
   background-color: #F5F5F5;
-  text-align: center; /* centra los elementos cuando hay varias filas */
+  text-align: center;
+  /* centra los elementos cuando hay varias filas */
 }
 
 .actualidad h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #1A1A1A;
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: #00315C;
 }
 
 .actualidad .news-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centra las cards */
+  justify-content: center;
   gap: 20px;
 }
 
@@ -23,7 +24,7 @@
   background-color: #FFFFFF;
   border-radius: 8px;
   overflow: hidden;
-  display: inline-flex; /* ancho según el contenido */
+  display: inline-flex;
   flex-direction: column;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
@@ -31,18 +32,26 @@
 }
 
 .actualidad .news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transform: translateY(-15px);
+  background-color: #00315C !important;
+}
+
+.actualidad .news-card:hover .news-content h3 {
+  color: #FFFFFF !important;
+}
+
+.actualidad .news-card:hover img {
+  filter: brightness(0.8);
 }
 
 .actualidad .news-card img {
   display: block;
-  width: auto;       /* ancho real de la imagen */
-  height: auto;      /* altura proporcional */
-  max-width: 250px;  /* opcional: limita el tamaño máximo */
+  width: auto;
+  height: auto;
+  max-width: 250px;
   object-fit: contain;
-  margin: 0 auto;    /* centra horizontalmente la imagen dentro de la card */
-  background-color: #f0f0f0; /* opcional */
+  margin: 0 auto;
+  background-color: #f0f0f0;
 }
 
 .actualidad .news-content {
@@ -53,7 +62,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  color: #1A1A1A;
+  color: #00315C;
   margin: 0;
 }
 
